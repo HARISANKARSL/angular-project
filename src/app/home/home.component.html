@@ -1,0 +1,212 @@
+
+<div class="container bg-light" >
+  <app-navitems></app-navitems>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/banner4.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/banner5.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/banner6.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+<div class="container-fluid">
+  
+  <div class="container">
+   <hr>
+    <div class="row py-5">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem; height:550px;" >
+          <img src="../assets/img/chld1.jpg" class="card-img-top img-fluid" width="150px" height="200px"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Junior Horlicse</h5>
+            <p class="card-text">Junior Horlicks Chocolate Flavoured Health & Nutrition Drink, 500 gm Jar</p> <hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button (click)="onchange1()" class="btn text-warning fw-bold " *ngIf="hide1">Add to cart</button>
+            <div class="btn-sec "  *ngIf=" show1">
+              <button class="btn btn-warning pe-1 text-light fw-bold" (click)="dec1()" [disabled]="!disbale1">-</button > <button  class="btn btn-warning pe-1 text-light fw-bold">{{rslt1}}</button><button  class="btn btn-warning pe-1 text-light fw-bold" (click)="inc1()" [disabled]="!disbaled1">+</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld6.webp" class="card-img-top img-fluid" width="150px" height="80px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button (click)="onchange2()" class="btn text-warning fw-bold " *ngIf="hide2">Add to cart</button>
+            <div class="btn-sec "  *ngIf=" show2">
+              <button class="btn btn-warning pe-1 text-light fw-bold" (click)="dec2()" [disabled]="!disbale2">-</button > <button  class="btn btn-warning pe-1 text-light fw-bold">{{rslt2}}</button><button  class="btn btn-warning pe-1 text-light fw-bold" (click)="inc2()" [disabled]="!disbaled2">+</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld5.jpg" class="card-img-top img-fluid" width="150px" height="200px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button (click)="onchange3()" class="btn text-warning fw-bold " *ngIf="hide3">Add to cart</button>
+            <div class="btn-sec "  *ngIf=" show3">
+              <button class="btn btn-warning pe-1 text-light fw-bold" (click)="dec3()" [disabled]="!disbale3">-</button > <button  class="btn btn-warning pe-1 text-light fw-bold">{{rslt3}}</button><button  class="btn btn-warning pe-1 text-light fw-bold" (click)="inc3()" [disabled]="!disbaled3">+</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld4.jpg" class="card-img-top img-fluid" width="150px" height="200px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button (click)="onchange4()" class="btn text-warning fw-bold " *ngIf="hide4">Add to cart</button>
+            <div class="btn-sec "  *ngIf=" show4">
+              <button class="btn btn-warning pe-1 text-light fw-bold" (click)="dec4()" [disabled]="!disbale4">-</button > <button  class="btn btn-warning pe-1 text-light fw-bold">{{rslt4}}</button><button  class="btn btn-warning pe-1 text-light fw-bold" (click)="inc4()" [disabled]="!disbaled4">+</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+   
+      
+   
+   
+     
+    </div>
+    <div class="row py-5">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem; height:550px;" >
+          <img src="../assets/img/chld1.jpg" class="card-img-top img-fluid" width="150px" height="200px"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Junior Horlicse</h5>
+            <p class="card-text">Junior Horlicks Chocolate Flavoured Health & Nutrition Drink, 500 gm Jar</p> <hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button  class="btn text-warning fw-bold " *ngIf="hide1">Add to cart</button>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld6.webp" class="card-img-top img-fluid" width="150px" height="80px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button  class="btn text-warning fw-bold " >Add to cart</button>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld5.jpg" class="card-img-top img-fluid" width="150px" height="200px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button  class="btn text-warning fw-bold " >Add to cart</button>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chld4.jpg" class="card-img-top img-fluid" width="150px" height="200px"  cl alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><hr>
+            <h6 class="text-center">MRP( <span class="text-secondary"><del>Rs 330</del></span>  )</h6>
+            <h6 class="text-center">Rs 260</h6>
+            <div class="btnsec text-center ">
+            <button  class="btn text-warning fw-bold " >Add to cart</button>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+   
+      
+   
+   
+     
+    </div>
+  </div>
+</div>
+<div class="container cartsec bg-light fixed-bottom  mx-auto" *ngIf="cart">
+  <div class="items">
+    <div class="items-sec p-2">
+    <h6 >Total no of items</h6>
+    <h3 class="px-5">{{items}}</h3>  
+  </div>
+  <div class="price-sec p-3">
+    <h2>₹{{rs}}</h2><span class="text-secondary pt-2"><del>(Rs 330)</del></span> <span class="text-success pt-2">10.2%off</span>
+  <div class="premium">
+    <h6>Earn  
+      ₹32.34 Cashback
+       on purchasing  on premium
+       plan</h6>
+      
+  </div>
+  <div class="btnssec text-end">
+    <button type="submit" class="btn btn-outline-danger p-3">Upgarde to premium</button>
+    <button class="btn btn-success mx-3">Go to cart</button>
+  </div>
+
+  </div>
+  </div>
+</div>

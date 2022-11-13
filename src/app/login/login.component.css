@@ -1,0 +1,29 @@
+
+.login-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 86vh;
+  
+    background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch15-217-01-kqdjajvh.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=15fccb3bc143a97781dc8845d6b00c9c);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    height: 400px;
+    box-shadow: -1px 7px 10px 0px rgba(0,0,0,0.7);
+}
+.card input{
+    border: none;
+    outline:  none;
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+.btn-sec{
+    width: 80%;
+}
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}

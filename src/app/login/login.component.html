@@ -1,0 +1,55 @@
+<div class="container-fluid  login-sec mt-3">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 ">
+<div class="img-sec pt-5 ">
+    <img src="assets/img/lgn2.png" class="img-fluid " width="800px" height="500px" alt="">
+</div>
+            </div>
+            <div class="col-sm-12 col-md-4 mt-5">
+                <div class="text-sec text-end  ">
+                    <h3>   Welcome to Pure Pharmacy</h3>
+                    <h6 class="text-end">Signup with us and get exclusive <br>
+                    Discounts& savings on Medicines. <br>
+                    Get express delivery in 2hrs.
+                    </h6>
+                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="card"  >
+                                    <div class="card-body py-2">
+                                      <h5 class="card-title mt-5 text-center">Login</h5>
+                                     <form [formGroup]="loginform" (ngSubmit)="onsubmit()">
+                                        <div class="formsec px-5">
+                                        <label for="" class="py-1">Email</label> <br>
+                                        <input type="email" name="email" id="email" placeholder="enter your email" formControlName="email" ngClass="{'is-invalid:loginfunc.email.errors'}" [(ngModel)]='emails'>
+                                    </div>
+                                    <div *ngIf="email.invalid && email.touched" class="px-5 text-danger">
+                                        <span *ngIf="email.errors?.required">email required</span>
+                                        <span *ngIf="email.errors?.email">invalid email </span>
+                                    </div>
+                                    
+                                    <div class="formsec my-3 px-5">
+                                        <label for="" class="py-1">Password</label> <br>
+                                        <input type="password" name="password" id="password" placeholder="enter your password" formControlName="pass" [(ngModel)]='passw'>
+                                        <div *ngIf="pass.invalid && pass.touched" class=" text-danger">
+                                            <span *ngIf="pass.errors?.required">password required</span>
+                                           <p class="text-danger">{{errormsg}}</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="btn-sec d-grid px-5 my-5">
+                                        <button class="btn btn-success btn" type="submit" (click)="login()">Login</button >
+                                        
+                                    </div>
+                                    
+                                     </form> 
+                                     
+                                    </div>
+                                  </div>
+                            </div>
+           
+        </div>
+    </div>
+</div>
+

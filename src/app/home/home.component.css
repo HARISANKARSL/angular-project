@@ -1,0 +1,58 @@
+.carousel-item ::before{
+    background: rgba(0, 0, 0, 0.5);
+}
+.carousel-indicators button{
+background-color: rgb(70, 74, 74);
+border-radius: 50%;
+height: 15px;
+width: 15px;
+}
+.list-unstyled{
+text-decoration: none;
+}
+.card{
+    box-shadow: 4px 1px 6px 0.6px rgba(0,0,0,0.4);  
+}
+.btn-sec button{
+    width: 60px;
+}
+.cartsec{
+    height: 80px;
+    box-shadow: 4px 1px 10px 0.1px rgba(0,0,0,0.7);  
+}
+.items-sec{
+    border-right: 2px solid rgba(235, 235, 235, 0.968);
+    width: 200px;
+    height: 200px;
+}
+.items{
+    display: flex;
+}
+.price-sec{
+    display: flex;
+}
+.premium{
+  position: absolute;
+  top: 50px;
+}
+.btnssec{
+   position: absolute;
+ left: 900px;
+ display: flex;
+
+
+}
+.carousel-control-next-icon{
+    background-color: rgb(46, 47, 47);
+    border-radius: 50%;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+}
+.carousel-control-prev-icon{
+    background-color: rgb(46, 47, 47);
+    border-radius: 50%;
+    font-size: 15px;
+    height: 30px;
+    width: 30px; 
+}

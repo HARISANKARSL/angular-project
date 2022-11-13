@@ -1,0 +1,30 @@
+.dropdown-menu{
+    width: 550px;
+    
+}
+.BabyCare{
+    width: 450px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+  
+}
+
+.dropdown .dropdown-menu.show{
+    display: none !important;
+  
+}
+.dropdown li a{
+    font-size: 12px;
+    font-weight: 700;
+    color:#01495b;
+}
+.dropdown li a:hover{
+    color:#046079;
+    
+    
+}
+
+.clr{
+    background-color: gray;
+}
